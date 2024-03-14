@@ -67,7 +67,8 @@ On the other hand, I am also contemplating the use of a tool like json-server to
 3. **Lack of working models**: The project cannot incorporate working models directly within the website. Attempts to use external APIs for this purpose were hindered by issues such as access restrictions or subscription problems, as shown in the provided screenshot. Some AI model APIs that were tried to incorporate in this project were -
 * Image-to-text OPENAI like - DALL-E (paid)
 * Text-to-Text OPENAI like - Chatgpt
-* Text-to-Image like- Hugging face (Link)
+* Text-to-Image like- Hugging face [Link](https://huggingface.co/spaces/radames/Real-Time-Text-to-Image-SDXL-Lightning)
+
 Separate API keys were generated and their endpoints were used to use these APIs but they were paid.
 ![atlan1](https://github.com/Dhaval8055/Atlan-Frontend/assets/104723685/0713522a-3515-4af6-b041-98de1db0a078)
 
