@@ -1,47 +1,21 @@
 # Atlan-Frontend
+Overview
+This project is an AI model web application that allows users to explore, learn about, and create various AI models. It features a user-friendly interface with a homepage that includes a "Get Started" button, an explore page showcasing all AI models (including featured ones), a detailed model page for learning about specific models, and a page for creating new AI models.
 
-**Description**:
-
-This project is a web application that allows users to explore, learn about, and create various AI models. It features a user-friendly interface with functionalities for:
-
-##Login/SignUp: Users can login/signup on the website, and can avail the functionalities of bookmarking a model and creating a new one.
-##Explore AI Models: Users can explore a comprehensive list of AI models. Users can also search for specific models, and the models are displayed in alphabetical order.
-Learning about models: Each model has a dedicated page that provides detailed information, such as the model's description, provider. The user can try a model by entering a text input and can see the desired output (dummy).
-Creating new models: Users can add new models to the system by providing relevant information such as the model title, provider, and description.
-Bookmarking models: Users can save/unsave models they find interesting for later reference.
-Featured wall (Trendings): Users can see which models are trendings and are most bookmarked by other users. The top 8 models are displayed on the “Trendings” page and are sorted as per the number of bookmarks. The models with the same number of bookmarks are sorted in alphabetical order.
-Responsiveness: The website is fully responsive and can be easily viewed on all screens.
-Tech Stack:
-
-React: A JavaScript library for building user interfaces.
-Vite: A frontend build tool that focuses on providing a fast development experience for modern web projects.
-React Router: React Router is utilized for declarative routing in the application, enabling navigation between different components/pages.
-React Bootstrap: React Bootstrap is used for responsive design and layout.
-Firebase Authentication: Firebase Authentication is used for user authentication, enabling features like login, logout, and account creation.
-Axios: Axios is utilized for making HTTP requests, likely for fetching data from APIs.
-HTML/CSS: Basic HTML and CSS are used for structuring the components and styling the application, respectively.
-ESLint: A tool for identifying and reporting patterns found in ECMAScript/JavaScript code.
-Performance Optimizations
-Description:
-
-I've implemented various optimizations to enhance performance and decrease load times:
-
-React Context API: Utilized React Context API to efficiently manage data for improved user experience.
-Code Splitting: Employed code splitting to break down code into smaller bundles for faster loading.
-Lazy Loading: Implemented lazy loading to delay non-critical resource loading for improved performance.
-Image Optimization: Optimized images by reducing file sizes for quicker loading times.
-Caching: Cached frequently accessed resources locally to speed up subsequent visits.
-Minification: Minified the CSS code by removing unnecessary characters such as whitespace and comments. This reduces the overall size of the downloaded code, resulting in faster loading times.
-Development Commands:
-
-npm install: Installs all the required dependencies from the package.json file.
-npm create vite@latest project -- --template react
-npm install react-router-dom --legacy-peer-deps
-npm install react-bootstrap bootstrap
-npm install axios
-npm install firebase
-npm run dev: Starts the development server and runs the application in development mode.
+Technology Stack
+JavaScript Framework: React.js
+Major Plugins/Packages:
+Bootstrap: For responsive design and layout.
+Helmet: For managing the document head.
+Cloudinary: To upload and manage images.
+Axios: For making API requests.
+Animate.css: For adding animations.
+Performance
 Page Load Time
-Description:
+The page load time of the application is 929 ms. This was measured using the following JavaScript code snippet:
 
-The page load time of the application is 95.5 ms. This was measured using the following code snippet:
+const loadStartTime = window.performance.timing.navigationStart;
+const loadEndTime = window.performance.timing.loadEventEnd;
+const pageLoadTime = loadEndTime - loadStartTime;
+To enhance performance and decrease load times, the following optimizations were implemented:
+Use of React Context API: By leveraging the Context API, data is loaded and managed efficiently across the application. This preemptive data loading significantly improves the user experience on the explore page by having data ready as soon as the user navigates to it, thereby reducing wait times.
